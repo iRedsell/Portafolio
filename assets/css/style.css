@@ -1,0 +1,62 @@
+body{
+  background-image: linear-gradient(to bottom right, #04293a, #009092,#04293a, #04293a, #009092);
+  font-family: "Nunito", sans-serif;
+} 
+
+.circular{
+  border-radius: 50%;
+  width: 30%;
+}
+
+.cmd-window {
+    width: 60%;
+    background-color: #333;
+    border: 1px solid #666;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: monospace;
+  }
+  
+  .cmd-header {
+    background-color: #444;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cmd-title {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .cmd-close {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .cmd-body {
+    padding: 20px;
+  }
+  
+  .cmd-prompt {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .cmd-output {
+    color: #ccc;
+  }
+
+  .color-text{
+    color: #ffffff
+  }
+  
+  #texto-animado {
+    max-width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+    color: #ccc;
+  }

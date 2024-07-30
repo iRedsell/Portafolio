@@ -3,14 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Portafolio</title>
 </head>
 <body>
-    
-
-
-
+    <!-- barra de navegacion -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Alejandro Mardones</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#acerca-mi">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     <!-- texto central -->
+    <div class="container mb-5 d-flex justify-content-evenly">
+        <img class="circular d-md-none d-sm-none d-none d-lg-block" src="assets/img/me.jpg" alt="Me-foto"/>
+        <div class="cmd-window">
+            <div class="cmd-header">
+              <span class="cmd-title" id="acerca-mi">Sobre mi</span>
+              <span class="cmd-close">×</span>
+            </div>
+            <div class="cmd-body" id="cmd">
+              <p class="cmd-prompt">$</p>
+              <p class="cmd-output">C:\Users\Alejandro Mardones>_</p>
+              <p class="cmd-output">Error al cargar texto!<span class="fa-fade">|</span></p>
+              <p class="cmd-output">Para recargar presione <button type="button" class="btn btn-outline-light" id="boton" onclick="ocultarDiv(),mostrarDiv(),escribirTexto(texto, textoAnimado)">Aqui!</button></p>
+            </div>
+            <div class="cmd-body" id="texto-animado" style="display: none;">
+              <p class="cmd-prompt">$</p>
+              <p class="cmd-output">C:\Users\Alejandro Mardones><span class="fa-fade">|</span></p>
+              <!-- <p class="cmd-output">Desde pequeno siempre he sido un apasionado por la tecnologia, gracias a que se me hacia facil de entender es que pude estudiar bastante de manera autodidacta. </p>
+              <p class="cmd-output">En el anio 2019 comence a estudiar TNS en Computacion e Informatica en el CFT de la Pontificia Universidad Catolica de Valparaiso, fue ahi donde me di cuenta que me encantaba el Desarollo Web.</p>
+              <p class="cmd-output">Actualmente me encuentro realizando un BootCamp de Desarollo FullStack JavaScript.<span class="fa-fade">|</span></p> -->
+            </div>
+        </div>
+    </div>
+    <!-- skills -->
+    <div class="container mb-5 color-text">
+      <h2 class="mb-3 text-center" id="skills">Skills</h2>
+      <span>HMTL <i class="fa-brands fa-html5"></i></span>
+      <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-success" style="width: 55%"></div>
+      </div>
+      <span>CSS <i class="fa-brands fa-css3-alt"></i></span>
+      <div class="progress mb-3" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-info" style="width: 60%"></div>
+      </div>
+      <span>Node JS <i class="fa-brands fa-node"></i></span>
+      <div class="progress mb-3" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-warning" style="width: 20%"></div>
+      </div>
+      <span>JavaScript <i class="fa-brands fa-js"></i></span>
+      <div class="progress mb-3" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-danger" style="width: 50%"></div>
+      </div>
+    </div>
+    <!-- proyectos -->
+    <div class="row gap-5 justify-content-evenly mb-5 color-text">
+      <h2 class="mb-3 text-center" id="proyectos">Mis Proyectos</h2>
+      <div class="card col-10 col-sm-10 col-md-5 col-lg-3 p-0 border-secondary text-bg-dark">
+        <img src="assets/img/restaurancito.png" class="card-img-top" alt="imagen-restaurancito">
+        <div class="card-body">
+          <h5 class="card-title">Restaurancito</h5>
+          <p class="card-text">Pagina realizada en mis clases de BootCamp, la cual es para un restaurant que vende colaciones en la zona.</p>
+          <a href="https://iredsell.github.io/restaurancito/" class="btn btn-secondary" target="_blank">Ver Pagina</a>
+        </div>
+      </div>
+      <div class="card col-10 col-sm-10 col-md-5 col-lg-3 p-0 border-secondary text-bg-dark">
+        <img src="assets/img/aerovia.png" class="card-img-top" alt="imagen-aerovia-express">
+        <div class="card-body">
+          <h5 class="card-title">Aerovia Express</h5>
+          <p class="card-text">Pagina realizada en mis clases de BootCamp, la cual es para una nueva aerolinea.</p>
+          <a href="https://github.com/iRedsell/AeroviaExpress" class="btn btn-secondary" target="_blank">Ver Pagina</a>
+        </div>
+      </div>
+      <div class="card col-10 col-sm-10 col-md-5 col-lg-3 p-0 border-secondary text-bg-dark">
+        <img src="assets/img/solotodo.png" class="card-img-top" alt="imagen-solotodo">
+        <div class="card-body">
+          <h5 class="card-title">Solotodo</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe dignissimos ut tempore, provident fugit adipisci odit veritatis aliquid culpa consequatur dolore, eos dolores, ullam ipsa ea sed necessitatibus placeat.</p>
+          <a href="https://www.solotodo.cl/" class="btn btn-secondary" target="_blank">Ver Pagina</a>
+        </div>
+      </div>
+    </div>
+    <div class="mb-5 row d-flex justify-content-center">
+      <h2 class="mb-3 text-center color-text mt-2" id="contacto">Contacto</h2>
+      <form class="was-validated col-5 text-center" id="formulario">
+        <div class="mb-3 form-floating">
+          <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nombre" required onchange="activarBoton()">
+          <label for="floatingInput" class="form-label">Nombre</label>
+          <div class="invalid-feedback">
+            El campo Nombre no puede estar vacio.
+          </div>
+        </div>
+        <div class="mb-3 form-floating">
+          <input type="email" class="form-control is-valid" id="validationServer02" placeholder="Correo" required onchange="activarBoton()">
+          <label for="floatingInput" class="form-label">Correo</label>
+        <div class="invalid-feedback">
+          El campo Correo no puede estar vacio.
+        </div>
+      </div>
+      <div class="mb-3 form-floating">
+        <input type="text" class="form-control is-valid" id="validationServer03" placeholder="Asunto" required onchange="activarBoton()">
+        <label for="floatingInput" class="form-label">Asunto</label>
+        <div class="invalid-feedback">
+          El campo Asunto no puede estar vacio.
+        </div>
+      </div>
+          <div class="mb-3 form-floating">
+            <textarea class="form-control is-valid" placeholder="Mensaje" id="validationServer04" style="height: 100px" required onchange="activarBoton()"></textarea>
+            <label for="floatingTextarea2" class="form-label">Mensaje</label>
+          <div class="invalid-feedback">
+            El Comentario no puede estar vacio
+          </div>
+        </div>
+        <div class="mb-3 text-center">
+          <button class="btn btn-outline-light" type="submit" id="enviar" disabled onclick="enviar()">Enviar</button>
+        </div>
+      </form>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">Enviado</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            El formulario se ha enviado con exito!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-body-tertiary color-text py-3 d-none d-lg-block" data-bs-theme="dark">
+      <div class="d-flex justify-content-center d-flex gap-2">
+        <h4 class="fw-medium">Redes</h4>
+        <a href="https://github.com/iRedsell" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></i>
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4b82025578.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
